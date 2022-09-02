@@ -7,6 +7,6 @@ public class TestFromTeacher {
         System.out.println("Это класс для тестирования;");
         System.out.println("Если он запускается - скорее всего, у вас всё настроено правильно;");
         System.out.println("Вы можете удалить этот класс и пакет.");
-        System.out.println("Что-то пишем, а что, не понятно.");
+        System.out.println("Что-то пишем, а что, не понятно. А потом еще что-то меняем.");
     }
 }
