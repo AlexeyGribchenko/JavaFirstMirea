@@ -11,11 +11,11 @@ public class Main {
             System.out.println("Enter \"5\" and one positive number to run Task_1_5.");
         } else {
             switch (args[0]) {
-                case "1" -> Task_1_1.run();
-                case "2" -> Task_1_2.run(args);
-                case "3" -> Task_1_3.run();
-                case "4" -> Task_1_4.run();
-                case "5" -> Task_1_5.run(Integer.parseInt(args[1]));
+                case "1" -> SumAverage.run();
+                case "2" -> SumMinMax.run();
+                case "3" -> Arguments.run(args);
+                case "4" -> HarmonicSeries.run();
+                case "5" -> Factorial.run(Integer.parseInt(args[1]));
                 default -> System.out.println("Incorrect value. Enter an argument: a number from 1 to 5");
             }
         }
