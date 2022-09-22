@@ -1,4 +1,4 @@
-package ru.mirea.task4.author;
+package ru.mirea.task2.author;
 
 public class Author {
 
@@ -28,6 +28,7 @@ public class Author {
         this.email = email;
     }
 
+    @Override
     public String toString() {
         return "Author`s name: " + this.name + " Email: " + this.email + " Gender: " + this.gender;
     }

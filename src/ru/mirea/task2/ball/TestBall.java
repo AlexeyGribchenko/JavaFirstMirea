@@ -1,13 +1,23 @@
 package ru.mirea.task2.ball;
 
+import java.util.Scanner;
+
 public class TestBall {
     public static void main(String[] args) {
-        Ball ball1 = new Ball();
-        Ball ball2 = new Ball("Volleyball");
-        Ball ball3 = new Ball("Basketball");
+        Ball ball = new Ball();
+        System.out.println(ball);
 
-        System.out.println(ball1);
-        System.out.println(ball2);
-        System.out.println(ball3);
+        System.out.println("Let`s move ball to 3 x and to 4 y");
+        ball.move(3, 4);
+
+        System.out.println(ball);
+        System.out.println("Now you can move ball");
+        System.out.println("Enter x and y");
+
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
+        ball.move(x, y);
+        System.out.print(ball);
     }
 }

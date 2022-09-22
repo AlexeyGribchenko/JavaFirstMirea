@@ -18,7 +18,32 @@ public class Book {
         this.price = price;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public int getReleaseYear() {
+        return releaseYear;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public void setReleaseYear(int releaseYear) {
+        this.releaseYear = releaseYear;
+    }
+
+    @Override
     public String toString() {
-        return "Title: " + this.title + "\nRelease year: " + this.releaseYear + "\nPrice: " + this.price;
+        return "Title: " + this.title + " Release year: " + this.releaseYear + " Price: " + this.price;
     }
 }
