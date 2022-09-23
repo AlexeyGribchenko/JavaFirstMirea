@@ -4,11 +4,11 @@ public class Main {
     public static void main(String[] args) {
 
         if (args.length == 0) {
-            System.out.println("Enter \"1\" to run Task_1_1. Other arguments will be ignored.");
-            System.out.println("Enter \"2\" and any other arguments to run Task_1_2.");
-            System.out.println("Enter \"3\" to run Task_1_3. Other arguments will be ignored.");
-            System.out.println("Enter \"4\" to run Task_1_4. Other arguments will be ignored.");
-            System.out.println("Enter \"5\" and one positive number to run Task_1_5.");
+            System.out.println("Enter \"1\" to run AverageSum.");
+            System.out.println("Enter \"2\" to run SumMinMax.");
+            System.out.println("Enter \"3\" and any other arguments to run Arguments.");
+            System.out.println("Enter \"4\" to run HarmonicSeries.");
+            System.out.println("Enter \"5\" to run Factorial.");
         } else {
             switch (args[0]) {
                 case "1" -> SumAverage.run();
