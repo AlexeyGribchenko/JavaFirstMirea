@@ -1,10 +1,9 @@
 package ru.mirea.task2.author;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class TestAuthor {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         System.out.println("Create your own author");
 
         Scanner scanner = new Scanner(System.in);
@@ -16,7 +15,7 @@ public class TestAuthor {
         System.out.print("Enter email: ");
         email = scanner.nextLine();
         System.out.print("Enter gender: ");
-        gender = (char) System.in.read();
+        gender = scanner.nextLine().charAt(0);
 
         Author author = new Author(name, email, gender);
         System.out.println("Here is your author:");
@@ -26,6 +25,6 @@ public class TestAuthor {
         newEmail = scanner.nextLine();
         author.setEmail(newEmail);
 
-        System.out.print(author.getName() + "`s e-mail is: " + author.getEmail());
+        System.out.print(author.getName() + "`s new e-mail is: " + author.getEmail());
     }
 }
