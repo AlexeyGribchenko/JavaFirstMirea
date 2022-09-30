@@ -15,6 +15,16 @@ public class Sofa extends AbstractFurniture {
     }
 
     @Override
+    public double getPrice() {
+        return this.price;
+    }
+
+    @Override
+    public String getType() {
+        return "sofa";
+    }
+
+    @Override
     public String toString() {
         return "Chair. Are pillows included: " + this.isPillowsIncluded + ";" + super.toString();
     }

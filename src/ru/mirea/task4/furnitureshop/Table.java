@@ -15,6 +15,16 @@ public class Table extends AbstractFurniture {
     }
 
     @Override
+    public double getPrice() {
+        return this.price;
+    }
+
+    @Override
+    public String getType() {
+        return "table";
+    }
+
+    @Override
     public String toString() {
         return "Chair. Number of table legs: " + this.numberOfTableLegs + ";" + super.toString();
     }

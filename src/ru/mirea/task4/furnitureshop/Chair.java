@@ -15,6 +15,16 @@ public class Chair extends AbstractFurniture {
     }
 
     @Override
+    public double getPrice() {
+        return this.price;
+    }
+
+    @Override
+    public String getType() {
+        return "chair";
+    }
+
+    @Override
     public String toString() {
         return "Chair. Is soft: " + this.isSoft + ";" + super.toString();
     }

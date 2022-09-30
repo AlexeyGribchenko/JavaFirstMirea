@@ -23,7 +23,9 @@ public abstract class AbstractFurniture {
 
     public abstract double getPrice();
 
+    public abstract String getType();
+
     public String toString() {
-        return String.format(" Sizes (%.1f, %.1f, %.1f). Price: %.1f", this.width, this.length, this.height, this.price);
+        return String.format(" Sizes (%.1f, %.1f, %.1f)", this.width, this.length, this.height);
     }
 }
