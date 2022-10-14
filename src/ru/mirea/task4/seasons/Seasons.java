@@ -17,7 +17,7 @@ public enum Seasons {
         this.avgTemperature = avgTemperature;
     }
 
-    public void printSeason(Seasons season) {
+    static public void printSeason(Seasons season) {
         switch (season) {
             case SUMMER -> System.out.println("I love summer!");
             case AUTUMN -> System.out.println("I love autumn!");
@@ -28,6 +28,10 @@ public enum Seasons {
 
     public String getDescription() {
         return "Cold season";
+    }
+
+    public double getAvgTemperature() {
+        return this.avgTemperature;
     }
 
     static public void printAllSeasons() {

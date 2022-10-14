@@ -33,43 +33,43 @@ public class OnlineShop {
         int choice2 = sc.nextInt();
         sc.skip("\n");
 
-        String choosenProduct = "";
-        double choosenPrice = 0.0;
+        String chosenProduct = "";
+        double chosenPrice = 0.0;
         switch (choice1) {
             case 1 ->  {
-                choosenProduct = "Laptop";
-                choosenPrice = laptopPrice;
+                chosenProduct = "Laptop";
+                chosenPrice = laptopPrice;
             }
             case 2 -> {
-                choosenProduct = "PC";
-                choosenPrice = pcPrice;
+                chosenProduct = "PC";
+                chosenPrice = pcPrice;
             }
             case 3 -> {
-                choosenProduct = "smartphone";
-                choosenPrice = smartphonePrice;
+                chosenProduct = "smartphone";
+                chosenPrice = smartphonePrice;
             }
             default -> {
             }
         }
 
-        System.out.print("Your " + choosenProduct + " costs: ");
+        System.out.print("Your " + chosenProduct + " costs: ");
         switch (choice2) {
-            case 1 -> System.out.println(formatRus.format(choosenPrice));
+            case 1 -> System.out.println(formatRus.format(chosenPrice));
             case 2 -> {
                 NumberFormat formatUSA = NumberFormat.getCurrencyInstance(Locale.US);
-                System.out.println(formatUSA.format(CurConverter.toDollars(choosenPrice)));
+                System.out.println(formatUSA.format(CurConverter.toDollars(chosenPrice)));
             }
             case 3 -> {
                 NumberFormat formatChina = NumberFormat.getCurrencyInstance(Locale.CHINA);
-                System.out.println(formatChina.format(CurConverter.toYuan(choosenPrice)));
+                System.out.println(formatChina.format(CurConverter.toYuan(chosenPrice)));
             }
             case 4 -> {
                 NumberFormat formatJapan = NumberFormat.getCurrencyInstance(Locale.JAPAN);
-                System.out.println(formatJapan.format(CurConverter.toJena(choosenPrice)));
+                System.out.println(formatJapan.format(CurConverter.toJena(chosenPrice)));
             }
             case 5 -> {
                 NumberFormat formatEurope = NumberFormat.getCurrencyInstance(Locale.FRANCE);
-                System.out.println(formatEurope.format(CurConverter.toEuro(choosenPrice)));
+                System.out.println(formatEurope.format(CurConverter.toEuro(chosenPrice)));
             }
             default -> {
             }

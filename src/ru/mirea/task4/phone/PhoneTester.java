@@ -11,10 +11,11 @@ public class PhoneTester {
         System.out.println("Phone3: " + phone3);
 
         System.out.println("\nFirst phone`s number: " + phone1.getNumber()); phone1.receiveCall("Dima");
-        System.out.println("Second phone`s number: " + phone2.getNumber()); phone2.receiveCall("Daya");
+        System.out.println("Second phone`s number: " + phone2.getNumber()); phone2.receiveCall("Danya");
         System.out.println("Third phone`s number: " + phone3.getNumber()); phone3.receiveCall("Alexey");
 
-        phone1.receiveCall("\nDima", "+79506439694");
+        System.out.println();
+        phone1.receiveCall("Dima", "+79506439694");
         phone2.receiveCall("Daya", "+79005477831");
         phone3.receiveCall("Alexey", "+78005553535");
 

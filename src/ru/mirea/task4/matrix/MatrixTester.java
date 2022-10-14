@@ -16,8 +16,8 @@ public class MatrixTester {
             System.out.println("Error, wrong size of the matrix");
         }
 
-        System.out.println("\nMatrix2 multiplication by number:");
-        m2.multiplyByNumber(-10.0);
+        System.out.println("\nMatrix2 multiplication by number -7.3:");
+        m2.multiplyByNumber(-7.3);
         m2.printMatrix();
 
         System.out.println("\nMatrix1 addition to matrix 1:");
