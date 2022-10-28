@@ -36,7 +36,6 @@ class Animation extends JFrame {
                 throw new RuntimeException(e);
             }
         }
-
     }
 
     public static void main(String[] args) {
