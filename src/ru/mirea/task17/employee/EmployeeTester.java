@@ -1,9 +1,5 @@
 package ru.mirea.task17.employee;
 
-import ru.mirea.task17.mvcstudentpattern.Student;
-import ru.mirea.task17.mvcstudentpattern.StudentController;
-import ru.mirea.task17.mvcstudentpattern.StudentView;
-
 public class EmployeeTester {
 
     private static Employee retrieveEmployeeDataFromDatabase() {

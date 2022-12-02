@@ -8,7 +8,6 @@ public class OwnExceptions {
         } catch (NullPointerException e) {
             System.err.println("null key in getDetails1");
         }
-
     }
 
     public static String getDetails2(String key) {
@@ -23,25 +22,16 @@ public class OwnExceptions {
         System.out.println(message);
     }
 
-    public static void exception4() {
-
-    }
-
-    public static void exception5() {
-
-    }
-
     public static void main(String[] args) {
         getDetails1(null);
-        printMessage("Biba and Boba");
+        printMessage("Message");
         try {
             printMessage(null);
         } catch (NullPointerException e) {
             System.err.println("null key in printMessage");
         }
         TrowsDemo trowsDemo = new TrowsDemo();
-        //trowsDemo.getKey();
-
+        trowsDemo.getKey();
         trowsDemo.getKey2();
     }
 }

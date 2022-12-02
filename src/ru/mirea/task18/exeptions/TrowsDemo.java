@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class TrowsDemo {
     public void getKey() {
         try {
-            printDetails("");
+            printDetails("someString");
         } catch (Exception e) {
             System.err.println(e.getMessage());
         }
@@ -36,7 +36,6 @@ public class TrowsDemo {
                 break;
             } catch (Exception e) {
                 System.err.println(e.getMessage());
-                continue;
             }
         }
     }
