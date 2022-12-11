@@ -62,14 +62,17 @@ public class OrderUI extends JFrame {
         add(makeOrderPanel, constraints);
 
         Map<String, Dish> dishesForOrder = new HashMap<>();
-        dishesForOrder.put("Lazanya", new Dish("Lazanya", "Tasty lazanya", 500));
-        dishesForOrder.put("Potato", new Dish("Potato", "Tasty potato", 400));
-        dishesForOrder.put("Sausage", new Dish("Sausage", "Tasty sausage", 300));
+        dishesForOrder.put("Kotleti", new Dish("Kotleti", "Some Description1", 500));
+        dishesForOrder.put("Makaroni", new Dish("Makaroni", "Some Description2", 400));
+        dishesForOrder.put("Spageti", new Dish("Spageti", "Some Description3", 300));
+        dishesForOrder.put("Pizza", new Dish("Pizza", "Some Description4", 200));
+        dishesForOrder.put("Sup", new Dish("Sup", "Some Description5", 100));
 
         Map<String, Drink> drinksForOrder = new HashMap<>();
-        drinksForOrder.put("Vodka", new Drink("Vodka", "Alcohol drink", 500, DrinkTypeEnum.VODKA, 40));
-        drinksForOrder.put("Water", new Drink("Water", "Not alcohol drink", 400, DrinkTypeEnum.WATER, 0));
-        drinksForOrder.put("Tea", new Drink("Tea", "Tasty tea", 300, DrinkTypeEnum.TEA, 0));
+        drinksForOrder.put("Vodka", new Drink("Vodka", "Some Description1", 500, DrinkTypeEnum.VODKA, 40));
+        drinksForOrder.put("Water", new Drink("Water", "Some Description2", 400, DrinkTypeEnum.WATER, 0));
+        drinksForOrder.put("Tea", new Drink("Tea", "Some Description3", 200, DrinkTypeEnum.TEA, 0));
+        drinksForOrder.put("Liquor", new Drink("Liquor", "Some Description4", 100, DrinkTypeEnum.LIQUOR, 17));
 
         constraints.gridwidth = 1;
         JComboBox dishesOrderComboBox = new JComboBox(dishesForOrder.keySet().toArray());
